@@ -5,38 +5,50 @@ This is the server side application for phone validation services
 
 This project is mainly for the server-side App for phone-validation application where it spins up on docker image to serve locally on port 8080
 
-## Project Structure
+JDK 1.7
 
-The project stucture is pretty simple N-Tier app in regards to the project structure which consists of the following components
+Spring Boot
 
-- controllers => contains the main REST API classes.
-
-- service => Service interfaces & implementations classes 
-
-- repository => classes interfaces for JPARepository
-
-- dto => Enitites used for quereing the API
-
-- models => DB Enitites definition
-
-## Development server
-
-
+JPA
+## Run server
 
 Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
 
-If Build fails for any reason , you can just run this command first to build the jar file
+Run `docker-compose up` for running the image.
+
+
+N.B : If Build fails for any reason , you can just run this command first to build the jar file
+
 
 Run `./mvnw clean package` for project build
 
+Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
+
 Run `docker-compose up` for running the image.
 
-## Build
+# Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+APIController is the entry point where you will find the following apis
 
 
-## Further help
+`api/health` : checking that server is up and running
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`api/countries` : for getting countries list
+
+`api/customers` : for getting customers data
+### Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.4/maven-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.4/maven-plugin/reference/html/#build-image)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.6.4/reference/htmlsingle/#using-boot-devtools)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.6.4/reference/htmlsingle/#boot-features-developing-web-applications)
+
+### Guides
+The following guides illustrate how to use some features concretely:
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
