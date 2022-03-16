@@ -2,16 +2,18 @@
 # Build stage
 #
 FROM maven:3.6.0-jdk-11-slim AS builder
-#WORKDIR /app
-COPY src /home/app/src
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml clean package
+WORKDIR /app
+COPY src /usr/src/app/src  
+COPY pom.xml /usr/src/app
+COPY sample.db /usr/src/app
+RUN mvn -f /usr/src/app/pom.xml clean package
 
 
 #
 # Package stage
 #
 FROM openjdk:17-oracle
+
 ADD sample.db sample.db
 VOLUME /tmp
 ARG JAVA_OPTS
