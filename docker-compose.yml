@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   jumiaservice:
-    image: jumiaservice
+    image: phonevalidationserver
     build:
       context: .
       dockerfile: ./Dockerfile
