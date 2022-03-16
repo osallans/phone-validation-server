@@ -1,8 +1,8 @@
 package phone.validation.server.dto;
 
 public class CustomerSearchDto {
-    private int countryId;
-    private int valid;
+    private int countryId; // -1 , means no filter
+    private int valid; // -1 , means no filter
     private int pageIndex;
     private int pageSize;
     

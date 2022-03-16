@@ -13,11 +13,11 @@ RUN mvn -f /usr/src/app/pom.xml clean package
 # Package stage
 #
 FROM openjdk:17-oracle
-
+WORKDIR /app
 ADD sample.db sample.db
 VOLUME /tmp
 ARG JAVA_OPTS
 ENV JAVA_OPTS=$JAVA_OPTS
-COPY target/phone-validation-server-0.0.1-SNAPSHOT.jar phone-validation-server.jar
+COPY --from=builder /usr/src/app/target/phone-validation-server-0.0.1-SNAPSHOT.jar phone-validation-server.jar
 EXPOSE 8080
 ENTRYPOINT exec java $JAVA_OPTS -jar phone-validation-server.jar

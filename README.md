@@ -12,7 +12,7 @@ Spring Boot
 JPA
 # Getting Started
 
-Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
+Run `docker build --no-cache --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
 
 Run `docker-compose up` for running the image.
 
@@ -22,7 +22,7 @@ N.B : If Build fails for any reason , you can just run this command first to bui
 
 Run `./mvnw clean package` for project build
 
-Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
+Run `docker build --no-cache --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
 
 Run `docker-compose up` for running the image.
 
