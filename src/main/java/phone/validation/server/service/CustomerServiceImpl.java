@@ -1,4 +1,4 @@
-package phone.validation.server.dao;
+package phone.validation.server.service;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,6 @@ import phone.validation.server.models.Country;
 import phone.validation.server.models.Customer;
 import phone.validation.server.repository.CountryRepository;
 import phone.validation.server.repository.CustomerRepository;
-import phone.validation.server.service.CustomerService;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

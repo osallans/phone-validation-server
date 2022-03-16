@@ -1,4 +1,4 @@
-package phone.validation.server.dao;
+package phone.validation.server.service;
 import java.util.List;
 import java.util.Optional;
 
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import phone.validation.server.models.Country;
 import phone.validation.server.repository.CountryRepository;
-import phone.validation.server.service.CountryService;
 
 @Service
 public class CountryServiceImpl implements CountryService {
