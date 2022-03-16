@@ -39,7 +39,7 @@ public class APIController {
     //////////////////////////////////////////////////////////////////
     //Check server health
     @CrossOrigin
-    @GetMapping("/health")
+    @GetMapping("/api/health")
     public String getUrlStatusMessage()
     {
         String returnMessage="";

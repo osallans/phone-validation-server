@@ -21,9 +21,13 @@ The project stucture is pretty simple N-Tier app in regards to the project struc
 
 ## Development server
 
-Run `./mvnw clean package` for project build
+
 
 Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
+
+If Build fails for any reason , you can just run this command first to build the jar file
+
+Run `./mvnw clean package` for project build
 
 Run `docker-compose up` for running the image.
 

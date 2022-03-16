@@ -16,7 +16,7 @@ import phone.validation.server.service.CustomerService;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-class JumiaServiceApplicationTests {
+class JumiaServiceApplicationUnitTests {
 
 	@Autowired
     private CustomerService customerService;

@@ -6,6 +6,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.springframework.lang.Nullable;
+
 @Entity
 @Table(name = "Customer")
 public class Customer{
@@ -15,12 +17,13 @@ public class Customer{
 	private String name;
 	@Column(name="phone")
     private String phone;
-    
+    @Nullable
 	@OneToOne
 	@JoinColumn(name = "country_id")
 	private Country country;
+	@Nullable
 	@Column(name="valid")
-    private int valid;
+    private Integer valid;
 
 	 public Customer(){
 
