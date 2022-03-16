@@ -1,17 +1,12 @@
-package jumia.service.jumiaservice;
+package phone.validation.server;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
-
 import phone.validation.server.dto.CustomerSearchDto;
 import phone.validation.server.models.Country;
 import phone.validation.server.models.Customer;
