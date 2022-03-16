@@ -10,7 +10,7 @@ JDK 1.7
 Spring Boot
 
 JPA
-## Run server
+# Getting Started
 
 Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest "."` for adding needed packages.
 
@@ -26,7 +26,7 @@ Run `docker build --pull --rm -f "Dockerfile" -t phonevalidationserver:latest ".
 
 Run `docker-compose up` for running the image.
 
-# Getting Started
+# API quick reference
 
 APIController is the entry point where you will find the following apis
 
